@@ -1,0 +1,352 @@
+/* Couleur des textes #FC8334*/
+@charset"Utf-8";
+html{
+	margin:0px;
+	padding:0px;
+	 background-color: #000000;
+	 width: 100%;
+  }
+
+body{
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+	   font-family:font-family: 'Oswald', sans-serif;
+	   background-color: #000000;
+	   color:#FFFFFF;
+
+/*Le header avec les bottom au dessus
+*/}
+header{
+	height: 40px;
+	line-height: 40px;
+	color: #000000;
+	width: 100%;
+
+}
+
+
+.btn-secondary{
+color: #000000;
+text-align: center;
+	
+
+}
+.ban{
+	background-color: #000000;
+	
+	
+}
+.ban:hover{
+background-color: #000000;
+}
+
+.btn-primary-btn-lg{
+	color:#FC8334;
+	margin: 10px;
+	padding: 0px;
+	border-radius: 75px;
+	border-color: transparent;
+	width: 250px;
+	height: 37px;
+	border-color: #FFFFFF;
+	background-color: #FFFFFF;
+    letter-spacing: 2px;
+    font-size: 14px;
+
+
+
+
+ }
+.btn-primary-btn-lg:hover{
+	text-decoration:none;
+
+	
+
+}
+
+/*FIN Du header avec les bottom au dessus
+*/
+
+.menu{
+
+	
+	margin-top: 0px;
+	width:100%;
+	display: inline-block;
+	justify-content: space-between;
+	padding: 100px;
+}
+.carte{
+	float: right;
+}
+.linkcarte{
+	float: left;
+}
+
+/* Le menu dans le slide*/
+.main-text
+{
+    font-size: 15px;
+    position: absolute;
+    top: 90px;
+    width: 96.66666666666666%;
+    color: #FFF;
+}
+.text-row, .text-clear
+{
+    min-width: 170px;
+    line-height: 26px;
+   text-align: right;
+
+}
+.text-clear
+{
+    color: #FFF;
+    background-color: transparent;
+    margin-right: 15px;
+    transition: color; 
+    transition-duration: 0.5s;
+}
+.text-clear:hover
+{
+    color:#FC8334;
+    background-color: transparent;
+    text-decoration-line: none;
+       
+
+}
+.linkcarte{
+	opacity: 1;
+	background-color: transparent;
+	float: left;
+	height: 70px;
+	width: 100px;
+
+}
+/*Fin du menu slide*/
+/*
+ TEXTE ENTRE SLIDE ET IMAGE
+*/
+.p1,.p2{
+	font-size: 27px;
+	text-align: center;
+	margin: 70px;
+
+}
+sp{
+	color:#FC8334;
+
+}
+	/*Le sp est une balise crée en plus pour mettre une couleur particulièreà certaines zones de texte
+	*/
+/*FIN TEXTE ENTRE SLIDE ET IMAGE*/
+
+/*ICONES AVEC TEXT ENTRE DEUX PARTIES DU SITE*/
+
+/*Logos correspondent aux images au milieu de la page du site*/
+.col-md-3 img{
+	height: 35px;
+	width: 45px;
+	margin: 0px;
+	padding: 0px;
+   
+}
+
+.log img{
+	height: 550px;
+     width: 100%;
+     margin-top: 50px;
+     padding: 1px;
+
+}
+/*Fin*/
+
+/*Boutton pour faire le milieu de page*/
+button{
+
+
+  	color:#FFFFFF;
+	margin-top: 50px;
+	padding: auto;
+	border-radius: 75px;
+	width: 250px;
+	height: 55px;
+	border-color: #FFFFFF;
+	background-color: #FC8334;
+    letter-spacing: 2px;
+    font-size: 14px;
+
+}
+
+/*FIN*/
+
+/*Début de la carte d'iténéraire et google*/
+#container-fluid{
+	font-size: 27px;
+	width: 
+	height:400px;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	display: flex;
+	background-color: #FC8334;
+}
+.bot{
+     position:absolute;
+     bottom: 100px;
+     right: 250px;
+    text-align: center;
+	border-radius:75px;
+	border-color: transparent;
+	background-color:#FFFFFF;
+	color:#FC8334;
+	width: 300px;
+	height:50px;
+	letter-spacing:2px;
+	font-size:21px;
+}
+.bot:hover{
+	background-color:#FC8334;
+	color:#FFFFFF;
+	border-color: #FFFFFF;
+	transition-duration: 0.5s;
+	}
+
+.text-left{
+float: left;
+margin-top: 50px;
+padding-left: 50px;
+}
+.text-right{
+float: right;
+margin-top: 50px;
+padding-right: 50px;
+}
+.lead{
+	text-align: center;
+	font-size: 37px;
+	padding-top: 40px;
+	font-weight: bold;
+	letter-spacing:3px; 
+}
+
+}
+.googlemap{
+width: 300px;
+height:400px;
+margin-top: 30px;
+}
+
+i{
+	font-size: 45px;
+
+}
+
+ 
+/*fin de la carte d'iténéraire et google*/
+
+/*COMMENTAIRES GOOGLE ET FACE BOOK, j'ai fait des PupOp puis j'ai mis des images des commentaire ,
+ si on doit clicker dessus elle renvoi au commentaire lui même, j'ai pas voulu redimensionner les images.*/
+.btn-primary{
+	background-color: transparent;
+	border-color: transparent;
+	margin-bottom: 15px;
+
+}
+.btn-primary:hover{
+	color: transparent;
+	background-color: transparent;
+	border-color: transparent;
+	
+}
+/*fin des popup comment
+*/
+
+#lacarte{
+	margin-top: 70px;
+	margin:0px;
+	margin-bottom: 20px;
+	padding: 0px;
+	width: 100%;
+	background-color: #05201C;
+	text-align: center;
+
+}
+
+.footer{
+	text-decoration: none;
+	text-align: center;
+	padding: 0px;
+	margin:10px;
+	justify-content: space-around;
+	color: #FFFFFF;
+    
+}
+.active{
+	color: #FFFFFF;
+
+}
+.active:hover{
+	color:#FC8334;
+}
+.activate{
+	color:#FFFFFF;
+	text-decoration:none;
+}
+.activate:hover{
+	color:#FFFFFF;
+}
+h1{
+	text-align: center;
+	margin-top: 70px;
+}
+h2{
+	text-align: center;
+}
+
+
+}
+
+.box{
+  animation-duration: 3s;
+  animation-name: glissement;
+animation-iteration-count: all;
+  height: 400px;
+  width: 350px;
+  bottom-right: 30px;
+ position: absolute;
+}
+
+.moving {
+  animation-duration: 2s;
+  animation-name: glissement;
+  animation-iteration-count: all;
+  height: 400px;
+  width: 350px;
+  bottom-right: 30px;
+ position: absolute;
+    animation-timing-function: ease;
+
+
+   
+}
+
+
+
+@keyframes glissement {
+  from {
+   margin-bottom:0px;
+   height: 1px;
+
+  }
+
+  to {
+      width: 25%;
+      bottom:300px;
+      height: 200px;
+      right: 100px;
+      position: absolute;
+      z-index: 1;
+  }
+
+/*  second animation*/
