@@ -1,2 +1,0 @@
-# Faridmeha
-Intégrationbootstrap
