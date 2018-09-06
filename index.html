@@ -1,0 +1,408 @@
+<!Doctype html>
+<html>
+<head>
+<title>BUISNESS</title>
+       <meta charset="utf-8">
+       <link rel="stylesheet" href="css/bootstrap.min.css">
+	   <link rel="stylesheet" href="skill.css"> 
+	   <link rel="stylesheet" href="skill.js">
+       	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+       	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script>
+	$(document).ready(function() {
+		$('.js-scrollTo').on('click', function() { // Au clic sur un élément
+			var page = $(this).attr('href'); // Page cible
+			var speed = 750; // Durée de l'animation (en ms)
+			$('html, body').animate( { scrollTop: $(page).offset().top }, speed ); // Go
+			return false;
+		});
+	});
+</script>
+        <script src="js/bootstrap.min.js"></script>   
+        <link href="https://fonts.googleapis.com/css?family=MedievalSharp" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Waiting+for+the+Sunrise" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- Début de header  -->
+
+<div class="dropdown-menu">
+  <a class="dropdown-item" href="#">Regular link</a>
+  <a class="dropdown-item active" href="#">Active link</a>
+  <a class="dropdown-item" href="#">Another link</a>
+  <a class="dropdown-item" href="#">Another link</a>
+</div>
+
+<!-- Fin de header -->
+
+ <nav class="navbar navbar-expand-lg navbar-dark bg-dark justify-content-between">
+ 	<img class="logos" src="image/logos.jpg">
+  <a class="navbar-brand" href="#">Viens manger chez moi</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="#pub">Je découvre  <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#carouselExampleControls">Acceuil</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#accordion">Le principe</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#contact">Contact</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Menu
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="#">Le concept</a>
+          <a class="dropdown-item" href="#reserver">Reserver</a>
+          <a class="dropdown-item" href="#accordion">mon compte</a>
+          <a class="dropdown-item" href="#accordion">Villes</a>
+        </div>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+
+<!--  slider avec  -->
+
+
+<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+    	<p class="para text-center"> FAITES DE CHEZ VOUS VOTRE PROPRE RESTAURANT <br>
+    	         <sp>CHOISISSEZ VOTRE CARTE</sp> </p>
+      <img class="d-block w-100 img" src="image/chezmoi.jpg" alt="data-target">
+    </div>
+    <div class="carousel-item">
+    	<p class="para text-center"> IL EST BIEN POSSIBLE POUR VOUS DE DEVENIR CHEF <br>
+    	<sp>C'EST FACILE DE LE FAIRE & C'EST ENCORE PLUS FACILE DE LE DIRE</sp> </p>
+      <img class="d-block w-100 img" src="image/chef.jpg" alt="data-target">
+    </div>
+    <div class="carousel-item">
+    	<p class="para text-center"> IL EST ENCORE MEILLEUR DE LE PARTAGER AVEC LES <sp>AUTRES</sp> <br></p>
+      <img class="d-block w-100 img" src="image/mangerlentement.jpg" alt="data-target">
+    </div>
+  </div>
+  </div>
+
+  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+<!-- Fin du slider! -->
+
+<!-- Mon PORTFOLIO
+ --><div class="container-fluid pub">
+	<div class="row">  
+		<div class="col-md-4">
+			<h2 class="title">Découvrir les plats <br> Indiens </h2>
+ <img class="image" src="image/indien.jpg" alt="Alt image">
+   <h3>TOUTES LES SAVEURS DE L'INDE</h3>
+   <!-- Button trigger modal -->
+
+<!-- Modal -->
+  <button type="button" data-toggle="modal" data-target="#exampleModal">Click ici pour découvrir les menus proposés      </button>
+  	
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">MENU INDIEN<br>भारतीय मेनू</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+       <img class="batix" src="image/menuindien.jpg">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Annuler la commande</button>
+        <button type="button" class="btn btn-primary">Choisir ce menu</button>
+      </div>
+    </div>
+  </div>
+</div>
+   </div>
+  
+
+<div class="col-md-4">
+			<h2 class="title">Découvrir les plats THAï </h2>
+ <img class="image" src="image/thailand.jpg" alt="Alt image">
+   <h3>LES SAVEURS VENUES D'AILLEURS </h3>
+										   <!-- Button trigger modal -->
+
+										<!-- Modal -->
+  <button type="button" data-toggle="modal" data-target="#thaiModal">Click ici pour découvrir les menus proposés      </button>  
+  <div class="modal fade" id="thaiModal" tabindex="-1" role="dialog" aria-labelledby="thaiModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="thaiModalLabel">Menu THAI<br>เมนูอาหารไทย</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <img class="batix"src="image/menuthai.jpg">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Annuler la commande</button>
+        <button type="button" class="btn btn-primary">Choisir ce menu</button>
+      </div>
+    </div>
+  </div>
+</div> 
+  </div>
+
+   <div class="col-md-4">
+	<h2 class="title"> Découvrir les plats <br>CHINOIS </h2>
+ <img class="image" src="image/chinois.jpg" alt="Alt image">
+  <h3>TOUTES LES SAVEURS FAITES MAISON</h3>
+						  <!-- Button trigger modal -->
+
+<!-- Modal -->
+  <button type="button" data-toggle="modal" data-target="#chinoisModal">Click ici pour découvrir les menus proposés      </button>
+  <div class="modal fade" id="chinoisModal" tabindex="-1" role="dialog" aria-labelledby="chinoisModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="chinoisModalLabel">MENU CHINOIS<br>
+中文菜单</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+                <img class="batix" src="image/menuchinois.jpg">
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Annuler ma commande</button>
+        <button type="button" class="btn btn-primary">accepter ma commande</button>
+      </div>
+    </div>
+  </div>
+</div>
+   </div>
+  </div>
+ </div>
+
+<div class="container-fluid pub">
+ <div class="row">
+
+<div class="col-md-4 col-sm-6 col-xs-12">
+			<h2 class="title">Découvrir les délices méxicains </h2>
+<img class="image" src="image/mexico.jpg" alt="Alt image">
+ <h3>TOUTES LES SAVEURS D'AMERIQUE LATINE</h3>
+<!-- Modal -->
+
+  <button type="button" data-toggle="modal" data-target="#mexicoModal">Click ici pour découvrir les menus proposés      </button>
+  <div class="modal fade" id="mexicoModal" tabindex="-1" role="dialog" aria-labelledby="mexicoModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="mexicoModalLabel">menú mexicano</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+                <img class="batix" src="image/menumexicain.jpg">
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">annuler ma commande</button>
+        <button type="button" class="btn btn-primary">commander</button>
+      </div>
+    </div>
+  </div>
+</div>
+   </div>
+
+
+ <div class="col-md-4 col-sm-6 col-xs-12">
+			<h2 class="title">Découvrir les plats d'orient </h2>
+ <img class="image" src="image/maglouba.png" alt="Alt image">
+<h3>TOUTES LES SAVEURS SYRIENNE & LIBANAISE</h3>
+<!-- Modal -->
+
+  <button type="button" data-toggle="modal" data-target="#slModal">Click ici pour découvrir les menus proposés      </button>
+  <div class="modal fade" id="slModal" tabindex="-1" role="dialog" aria-labelledby="slModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="slModalLabel">Menu Syrien & Libanais <br>القائمة السورية واللبنانية</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+                <img class="batix" src="image/menusyrien.jpg">
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">annuler ma commande</button>
+        <button type="button" class="btn btn-primary">commander</button>
+      </div>
+    </div>
+  </div>
+</div>
+   </div>
+
+
+ <div class="col-md-4 col-sm-6 col-xs-12">
+		<h2 class="title">Découvrir les plats magrébins </h2>
+<img class="image" src="image/couscous.jpg" alt="Alt image">
+  <h3>TOUTES LES SAVEURS DU GRAND MAGREB</h3>
+<!-- Modal -->
+
+  <button type="button" data-toggle="modal" data-target="#magrebModal">Click ici pour découvrir les menus proposés      </button>
+  <div class="modal fade" id="magrebModal" tabindex="-1" role="dialog" aria-labelledby="magrebModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="magrebModalLabel">Magreb Délice<br>قائمة مغاربية</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <img class="batix" src="image/menumagreb.jpg">
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">annuler ma commande</button>
+        <button type="button" class="btn btn-primary">commander</button>
+      </div>
+    </div>
+  </div>
+</div>
+   </div> 
+</div>
+</div>
+<!-- fin des articles avec images 
+ -->
+
+ <!-- COncept avec le colpasse
+ --><div id="accordion">
+  <div class="card">
+    <div class="card-header" id="headingOne">
+      <center><h5 class="mb-0">
+        <button class="btn btn-link colpas" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+         <p class="concept">LE CONCEPT</p>
+        </button>
+      </h5></center>
+    </div>
+
+    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+     
+        <div class="container-fluid">
+        	<div class="row">
+        		<article class="col-md-4">
+        			<h4> Le grand principe </h4>
+        			<p> L'idée génerale est de faire de l'art culinaire un moyen de partage, on fais partager les saveurs de chez lui, et passer des secrets de cuisine aux autres.</p>
+        			<P1 class="textmail">Me renseigner sur JEDECOUVRE</P1>
+			<input type="email" name="email" placeholder="email" required="">
+			<button>Send</button>
+        		</article>
+      	
+        		<article class="col-md-4">
+        			<h4> Les Participants   </h4>
+        			<p> Chaque participant doit de s'inscrire cumuler des points, réserver des places et puis pour gagner des points il faut à son tour proposer des menus.En devenant membre, vous aurez 100 points , que vous pourrez utiliser pour commander votre place chez l'hôte que vous choisirez sur les multiples propositions et saveurs proposées.
+        	Ensuite pour gagner des point, à votre tour de jouer au chef et de proposer votre propre carte. </p>
+        		</article>
+    
+        		<article class="col-md-4">
+        			<h4>  JEDECOUVRE </h4>
+        			<p> En fonction de notre choix de dégustation on peut se renseigner auprès du chef, l'origine des aliments, leur provenance. On peut poser toutes les questions avant de réserver.</p>
+        		</article>
+        	</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</div>
+
+<form>
+  <div class="form-row">
+    <div class="form-group col-md-3 " id="reserver">
+      <label for="inputname4">Nom</label>
+      <input type="name" class="form-control" id="inputname4" placeholder="name">
+    </div>
+    <div class="form-group col-md-3">
+      <label for="inputprenom4">Pénom</label>
+      <input type="prénom" class="form-control" id="inputPassword4" placeholder="prénom">
+    </div>
+  </div>
+  <div class="form-group col-md-6">
+    <label for="inputAddress">Addresse</label>
+    <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+  </div>
+  <div class="form-group col-md-6">
+    <label for="inputAddress2">Addresse 2</label>
+    <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+  </div>
+  <div class="form-row">
+    <div class="form-group col-md-3">
+      <label for="inputCity">Ville</label>
+      <input type="text" class="form-control" id="inputhobby">
+    </div>
+    <div class="form-group col-md-2">
+      <label for="inputState">Je veux!</label>
+      <select id="inputState" class="form-control">
+        <option selected>Devenir chef!</option>
+        <option>Proposer des menus</option>
+       
+      </select>
+    </div>
+    <div class="form-group col-md-1">
+      <label for="inputZip">code P</label>
+      <input type="text" class="form-control" id="inputZip">
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" id="gridCheck">
+      <label class="form-check-label" for="gridCheck">
+        Je veux recevoir les nouveautés
+      </label>
+    </div>
+  </div>
+  <button type="submit" class="btn btn-primary">Sign in</button>
+ 
+</form>
+
+<!-- Le footer
+ --><div class="container-fluid footer">
+ <nav class="ban" id="contact">
+		<div class="row">
+  <div class="col-md-2 col-sm-3>"> <a class="nav-link active" href="#">Mensions légales</a><br>Droit</div>
+  <div class="col-md-2 col-sm-3>"> <a class="nav-link active" href="#contact">Nous Contacter</a><br><p>Tél:0602628856<br>
+  mail:mehaddenefarid<br>@gmail.com<br>Lyon 69520</p></div>
+  <div class="col-md-2 col-sm-3"> <a class="nav-link activate" href="#">2018</a>NEW</div>
+  <div class="col-md-2 col-sm-3>"> <a class="nav-link active" href="#">ESPACE PARTICIPANTS</a></div>
+  <div class="col-md-2 col-sm-3>"> <a class="nav-link active" href="#">ADRESSE DU SIEGE</a><br> 69520 LYON</div>
+        </div>
+ </nav>
+
+ <script language="PHP"><?php
+     $x = 4;
+  $ message = ($x < = O ? '$x valeur positive' : '$x valeur valeur négative');
+  echo "$x valeur positive";
+?>
+  </script>
+
+</body>
+</html>
